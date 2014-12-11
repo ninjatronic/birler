@@ -18,6 +18,8 @@ defaults.
 ```coffeescript
 birler = require 'birler'
 birler
+  color: 'white'
+  styles: []
   levelEnvironmentVariable: 'LEVEL'
   levels:
     fatal:
