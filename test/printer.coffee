@@ -21,6 +21,7 @@ describe 'lib/printer', ->
 
   afterEach ->
     imports['console'].log.reset()
+    imports['bluebird'].resolve.reset()
 
   it 'should exist', ->
     printer.should.exist

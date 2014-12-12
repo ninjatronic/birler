@@ -205,7 +205,7 @@ describe 'lib/config', ->
         it 'should be a string', ->
           config.render.joiner.should.be.a 'string'
 
-        it 'should be \',\n  \'', ->
+        it 'should be \',\\n  \'', ->
           config.render.joiner.should.equal ',\n  '
 
       describe 'indent', ->
@@ -221,5 +221,5 @@ describe 'lib/config', ->
         it 'should be an array', ->
           config.render.padJoin.should.be.a 'array'
 
-        it 'should be [\'\n  \', \'\n\']', ->
+        it 'should be [\'\\n  \', \'\\n\']', ->
           config.render.padJoin.should.deep.equal ['\n  ', '\n']
