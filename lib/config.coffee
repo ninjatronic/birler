@@ -18,13 +18,13 @@ module.exports =
       severity: 3
     debug:
       color:  'grey'
-      styles: ['dim']
       severity: 4
   timestamps:
     shown: true
-    format: 'dddd, MMMM Do YYYY, h:mm:ss a'
+    color: 'grey'
   diffs:
     shown: true
+    color: 'cyan'
   render:
     joiner: ',\n  '
     indent: '  '
